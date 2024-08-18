@@ -1,0 +1,41 @@
+site_name: INFRA
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: amber
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/git
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - attr_list
+  - md_in_html
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: 🔗
+      # title: On this page
+      permalink_title: Link here
+plugins:
+    - search:
+        indexing: 'full'
+          #    - pdf-export:
+          #        verbose: true
+          #        media_type: print
+    - glightbox:
+        zoomable: true
+extra_css:
+  - CSS/pdf.css
+repo_url: http://git.ft/doc/documents
+edit_uri: edit/main/docs/

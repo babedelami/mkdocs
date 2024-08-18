@@ -1,0 +1,16 @@
+services:
+  mkdocs:
+    image: mkdocs:v2
+    build: .
+    restart: unless-stopped
+    volumes:
+      - "${PWD}:/docs"
+  nginx:
+    image: compareg/nginx-basic-auth-proxy:v1
+    restart: unless-stopped
+    ports:
+      - 8000:80
+    environment:
+      - BASIC_AUTH_USERNAME=admin
+      - BASIC_AUTH_PASSWORD=ih3mFTXolbEk
+      - PROXY_PASS=http://mkdocs:8000
