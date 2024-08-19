@@ -1,4 +1,4 @@
-# Welcome to Infra
+# Welcome to Infrastructure documentation
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
