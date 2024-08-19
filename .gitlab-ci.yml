@@ -14,6 +14,6 @@ deploy:
     - echo "$SSH_PRIVATE_KEY" | base64 -d > ~/.ssh/id_rsa
     - ssh-keyscan -H $SSH_HOST > ~/.ssh/known_hosts
   script:
-    - ssh z@$SSH_HOST "cd $WORK_DIR && ls && exit"
+    - ssh z@$SSH_HOST "cd $WORK_DIR && git pull https://gitlab+deploy-token-2:2APXvdxHcz3Xgzy3weaE@git.ft/doc/documents && docker compose up --build -d && exit"
   after_script:
     - rm -rf ~/.ssh
