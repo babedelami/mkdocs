@@ -51,13 +51,13 @@
 
 + 
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/5dd13851baaf74e0d745799d5742e25461fcd5c6158c48b8.png)+
+![](img/git/1.PNG)+
 
 پس از اتمام نصب، می‌توانید با استفاده از خط فرمان ویندوز(CMD) – (PowerShell) وGit Bash  نصب شده و در سیستم عامل لینوکس از ترمینال اجرا و نصب گیت را بررسی کنید.
 
 برای بررسی نصب شدن گیت کافیست وارد خط فرمان (CMD) و یا (PowerShell) و در لینوکس وارد ترمینال شده و دستورgit  را تایپ کنید و Enter را فشار دهید.
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/9e099a399971751b442849300fb63ef76d3e8ef5892619d3.png)+
+![](img/git/2.PNG)+
 
 ### **دستورات سطح پایه Git**
 
@@ -479,11 +479,11 @@ git whatchanged
 
 **+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/636f3727b09b084507c106ccd48ef2c133ce0bbdd39a1709.jpeg)+**
+**![](img/git/3-github-new.jpg)+**
 
 اطلاعات مورد نظر را وارد کنید.
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/d6f113e38eeb61f72eecfaf8824bd6dd544ac6d1e79a2b01.jpeg)**
+**![](img/git/3-github-new-page-detail.jpg)**
 
 **توضیحات فیلد ها:**
 
@@ -503,13 +503,14 @@ git whatchanged
 
 **+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/e7449260d99ab16ef890c956824a38355df875b36c3f8e20.png)+**
+**![](img/git/5.PNG)+**
 
 در ادامه مثال می خواهیم در سیستم خود یک پوشه با نام دلخواه ایجاد کنیم، و در آن یک فایل HTML قرار داده و به مخزن خود ارسال کنیم تا در آن ذخیره شود.
 
 **+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/bf742ed5f3543f2ebb4fce34b031649dd4ede658d73b8aa2.png)+**
+**![](img/git/6.PNG)+**
+
 
 وارد پوشه ایجاد شده شوید.
 
@@ -517,25 +518,27 @@ git whatchanged
 
 **+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/9f34b886016eb53bce7bb861398f4ca2ec7cfacbedb7ff09.png)+**
+**![](img/git/12.PNG)+**
+
 
 **+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/ea52d040ae0941645b872586b1aa0a13363b0c11a5ae1a62.png)+**
+**![](img/git/13.PNG)+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/798387bd4921d0287470251853f1d5cd2e9d2a355d30abdf.png)+**
 
-**+**
-
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/70543a1ea983f9f4c5d22300861e6e63b5d1308eb0da5437.png)+**
-
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/80d6ded2e207dea6fd37666cc3710c77d48ed73bc0b40731.png)+**
+**![](img/git/7.PNG)+**
 
 **+**
 
+**![](img/git/8.PNG)+**
+
+**![](img/git/10.PNG)+**
+
 **+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/8fe597a3c7b88727e2ec3cfd97cec5685fb406ef5b11d73a.png)+**
+**+**
+
+**![](img/git/11.PNG)+**
 
 **+**
 
@@ -551,13 +554,13 @@ git init
 
 **+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/bfc43699a11e5f5d233b2334a057b3d7d02c2bf0d2fb0508.png)+**
+**![](img/git/14.PNG)+**
 
 پس از اجرای این دستور یک پوشه ( درحالت مخفی ) ایجاد می گردد که شامل محتویات و فایل های مربوط به گیت است که نباید حذف شود. 
 
 **+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/04448c56df99dffa92888f1a788a480e90d4b95f1c77d96a.png)++**
+**![](img/git/15.PNG)++**
 
 **++**
 
@@ -565,7 +568,7 @@ git init
 
 **+**
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/39037007813be1d3441f734879f3b437d88cd2c874652427.png)+**
+**![](img/git/16.PNG)+**
 
 **+**
 
@@ -575,7 +578,7 @@ git init
 
 نتیجه: 
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/5d30f22d585cf6f8d236bf3e3c7d84c3104ce6ff15231e0b.png)+**
+**![](img/git/17.PNG)+**
 
 **+**
 
@@ -587,7 +590,7 @@ git init
 
 نتیجه:
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/fa72b922e88a268ccb6ce7ed70bde7abeeafa5ac167fad74.png)+**
+**![](img/git/18.PNG)+**
 
 **+**
 
@@ -603,7 +606,7 @@ git commit -m “Matne Nemone”
 
 نتیجه:
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f05d65449e257b2865b65416f4a0f4d44e1e82e0ac95f5c6.png)**
+**![](img/git/19.PNG)**
 
 **+**
 
@@ -617,7 +620,7 @@ git branch -M main
 
 **نتیجه:** 
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/5ee1df63faefa69e3daa32cd8b4d4cecaa4846d51c4c3680.png)+**
+**![](img/git/20.PNG)+**
 
 **+**
 
@@ -637,7 +640,7 @@ git remote add origin https://github.com/myname/sample.git
 
 نتیجه: 
 
-**![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/792815c8e5daea3311815dfde544b3cdf0644551f54e9145.png)**
+**![](img/git/21.PNG)**
 
 هم اکنون فایل ایجاد شده با نام test.txt آماده ارسال به مخزن می باشد، برای اینکار کافیست دستور git push وارد کرده و اینتر را میزنیم.
 
@@ -657,10 +660,10 @@ git push -u origin main
 
 نتیجه : 
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/305797ee47b0e3375344913f0e9e04e3f93ba881cd82d231.png)+
+![](img/git/22.PNG)+
 
 فایل ایجاد شده با موفقیت به مخزن ایجاد شده در گیت منتقل گردید.
 
 نتیجه:
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/791886ee1f4467d9f8b27b2689719c732ef3072034b735db.png)+
+![](img/git/23.PNG)+
