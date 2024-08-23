@@ -1,41 +1,43 @@
-site_name: INFRA
+site_name: آموزش ها
+
 theme:
-  name: material
+  name: 'material'
+  language: 'fa'
+  direction: 'rtl'
   palette:
-    scheme: slate
-    primary: amber
+    primary: 'green'
+    accent: 'blue'
+  font: false
+  feature:
+    tabs: false
+    
   features:
-    - search.suggest
-    - search.highlight
-    - navigation.top
     - content.code.copy
-    - content.action.edit
-  icon:
-    repo: fontawesome/brands/git
+  
+    
+    
+  # extra:
+  #   social:
+  #     - type: 'github'
+  #       link: 'https://github.com/squidfunk'    
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+nav:
+- صفحه اصلی: 'index.md'
+- بخش دو: 'sec2.md'
+
 markdown_extensions:
+  - attr_list
+  - md_in_html
+  
   - pymdownx.highlight:
-      linenums: true
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - attr_list
-  - md_in_html
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
-  - toc:
-      permalink: 🔗
-      # title: On this page
-      permalink_title: Link here
-plugins:
-    - search:
-        indexing: 'full'
-          #    - pdf-export:
-          #        verbose: true
-          #        media_type: print
-    - glightbox:
-        zoomable: true
-extra_css:
-  - CSS/pdf.css
-repo_url: http://git.ft/doc/documents
-edit_uri: edit/main/docs/
+  - pymdownx.superfences  
+
+
