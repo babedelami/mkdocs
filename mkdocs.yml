@@ -26,6 +26,7 @@ theme:
 
 extra_css:
   - 'stylesheets/extra.css'
+  - CSS/pdf.css
 
 nav:
 - صفحه اصلی: 'index.md'
@@ -56,4 +57,5 @@ plugins:
     - glightbox:
         zoomable: true
 
-
+repo_url: http://git.ft/doc/documents
+edit_uri: edit/main/docs/
