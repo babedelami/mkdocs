@@ -69,7 +69,7 @@
 
 تنظیم نام:
 
-```plaintext
+```bash
 git config –global user.name “Your name”
 ```
 
