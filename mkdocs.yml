@@ -29,8 +29,9 @@ extra_css:
   - CSS/pdf.css
 
 nav:
-- صفحه اصلی: 'index.md'
-- بخش دو: 'sec2.md'
+- آموزش گیت: 'index.md'
+- آموزش داکر: 'docker.md'
+#- بخش دو: 'sec2.md'
 
 markdown_extensions:
   - pymdownx.highlight:

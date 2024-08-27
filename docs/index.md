@@ -338,19 +338,19 @@ git rebase <base>
 
 دستور git bisect کمک می کند تا کامیت های بد را پیدا کنید.
 
-: شروع git bisect
+ شروع git bisect :
 
 ```plaintext
 git bisect start
 ```
 
-: به git bisect درباره یک کامیت خوب اطلاع دهید.
+ به git bisect درباره یک کامیت خوب اطلاع دهید. :
 
 ```plaintext
 git bisect good a123
 ```
 
-: به git bisect درباره یک کامیت بد اطلاع دهید.
+ به git bisect درباره یک کامیت بد اطلاع دهید. :
 
 ```plaintext
 git bisect bad z123
@@ -422,13 +422,13 @@ git verify-tag <tag>
 
 بیشتر اوقات قبل از commit یا push باید دو فایل یا شاخه git را با هم مقایسه کنید. دستور مفید git diff برای این کار استفاده می شود.
 
-: مقایسه دایرکتوری کاری با مخزن محلی:
+ مقایسه دایرکتوری کاری با مخزن محلی :
 
 ```plaintext
 git diff HEAD <filename>
 ```
 
-: مقایسه دو شاخه:
+ مقایسه دو شاخه :
 
 ```plaintext
 git diff <source branch> <target branch>
