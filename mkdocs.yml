@@ -1,0 +1,67 @@
+site_name: عنوان سایت
+
+theme:
+  icon:
+  annotation: material/arrow-right-circle
+  name: 'material'
+  language: 'fa'
+  direction: 'rtl'
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+  font: false
+  feature:
+    tabs: false
+  # extra:
+  #   social:
+  #     - type: 'github'
+  #       link: 'https://github.com/squidfunk'  
+  
+
+ 
+
+
+
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+nav:
+- صفحه اصلی: 'index.md'
+- اجایل: 'page-agile.md'
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.blocks.details
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.definition
+  - toc:
+     permalink: 💡
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.blocks.tab    
+  - pymdownx.tasklist
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.blocks.html    
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.progressbar
+ 
+
+plugins:
+- glightbox:
+    touchNavigation: false
+    loop: false
+    effect: zoom
+    width: 100%
+    height: auto
+    zoomable: true
+    draggable: true
