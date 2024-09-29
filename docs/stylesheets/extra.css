@@ -19,3 +19,29 @@ body {
 ::placeholder {
     font-family: vazir;
 }
+
+
+.md-header--shadow{
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+
+.md-content {
+    text-align: justify;
+  }
+
+
+  .md-typeset .critic.block{
+    text-decoration: none;
+  }
+
+  .md-typeset ins.critic {
+    background-color: #d0fbff;
+    border-radius: 8px;
+    color: #629297;
+  }
+
+
+  .md-footer{
+    margin-top: 200px;
+  }
