@@ -1,4 +1,4 @@
-![](img/Agile/agaile-logo.jpg)
+![](img/Agile/Poster.png)
 
 ### **روش چابک یا اجایل (Agile) چیست؟**
 

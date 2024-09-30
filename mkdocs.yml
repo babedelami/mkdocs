@@ -17,7 +17,7 @@ theme:
   #     - type: 'github'
   #       link: 'https://github.com/squidfunk'  
   
-
+    
  
 
 
@@ -29,6 +29,8 @@ extra_css:
 nav:
 - صفحه اصلی: 'index.md'
 - اجایل: 'page-agile.md'
+- دواپس: 'page-devops.md'
+- کوبرنتیز: 'page-kubernetes.md'
 
 markdown_extensions:
   - attr_list
