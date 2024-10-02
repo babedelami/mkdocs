@@ -31,6 +31,9 @@ extra_css:
 nav:
 - آموزش گیت: 'index.md'
 - آموزش داکر: 'docker.md'
+- اجایل: 'page-agile.md'
+- دواپس: 'page-devops.md'
+- کوبرنتیز: 'page-kubernetes.md'
 #- بخش دو: 'sec2.md'
 
 markdown_extensions:
@@ -44,6 +47,21 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.blocks.details
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.definition
+  - pymdownx.blocks.tab    
+  - pymdownx.tasklist
+  - pymdownx.superfences
+  - pymdownx.blocks.html    
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.progressbar
   - toc:
       permalink: 🔗
       # title: On this page
