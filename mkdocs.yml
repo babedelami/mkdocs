@@ -12,10 +12,14 @@ theme:
   font: false
   feature:
     tabs: false
+    - navigation.expand  # Expands navigation on page load 
+    - navigation.sections
   # extra:
   #   social:
   #     - type: 'github'
-  #       link: 'https://github.com/squidfunk'  
+  #       link: 'https://github.com/squidfunk'
+
+
   
     
  
