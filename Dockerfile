@@ -9,6 +9,7 @@ RUN pip install pymdown-extensions
 RUN pip install markdown-blockdiag
 RUN pip install markdown-include
 RUN pip install mkdocs-pdf-export-plugin
+RUN pip install mkdocs-open-in-new-tab
 
 WORKDIR /docs
 

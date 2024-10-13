@@ -12,29 +12,43 @@
 
 
 body {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 
 ::-webkit-input-placeholder {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 ::-moz-placeholder {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 :-ms-input-placeholder {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 ::placeholder {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 
 .md-typeset{
     text-align: justify;
 }
 
+
 .md-typeset img{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin-right: auto;
     margin-left: auto;
     display: block;
+}
+
+.md-typeset {
+    font-family: IRANSans;
+}
+
+.md-annotation .md-annotation__index {
+    margin-top: -5px;
+}
+
+.md-tooltip{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
 }

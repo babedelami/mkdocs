@@ -26,11 +26,13 @@ theme:
 
 extra_css:
   - 'stylesheets/extra.css'
-  - CSS/pdf.css
+  - 'stylesheets/font-awesome.min.css'
 
 nav:
-- آموزش گیت: 'index.md'
-- آموزش داکر: 'docker.md'
+- صفحه اصلی: 'index.md'
+- آموزش گیت: 'page-git.md'
+- آموزش داکر: 'page-docker.md'
+- آموزش مین‌آی‌او: 'page-MinOI.md'
 - اجایل: 'page-agile.md'
 - دواپس: 'page-devops.md'
 - کوبرنتیز: 'page-kubernetes.md'
@@ -52,11 +54,13 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.blocks.details
   - pymdownx.blocks.admonition
-  - pymdownx.blocks.definition
-  - pymdownx.blocks.tab    
+  - pymdownx.blocks.definition    
+  - pymdownx.blocks.tab
   - pymdownx.tasklist
   - pymdownx.superfences
-  - pymdownx.blocks.html    
+  - pymdownx.blocks.html 
+  - pymdownx.tabbed:
+      alternate_style: true   
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.keys
@@ -75,6 +79,9 @@ plugins:
           #        media_type: print
     - glightbox:
         zoomable: true
+    - open-in-new-tab
+
+
 
 repo_url: http://git.ft/doc/documents
 edit_uri: edit/main/docs/
