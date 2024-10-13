@@ -1,0 +1,3 @@
+pip install mkdocs-glightbox
+pip install mkdocs-open-in-new-tab
+
