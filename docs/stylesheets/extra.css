@@ -1,47 +1,40 @@
+ 
+
+
 @font-face {
-	font-family: vazir;
-	src: url("../fonts/Vazir-Medium-FD.woff");
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSansWeb.woff2') format('woff2'),
+    url('../fonts/IRANSansWeb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
+
 body {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 
 ::-webkit-input-placeholder {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 ::-moz-placeholder {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 :-ms-input-placeholder {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 ::placeholder {
-    font-family: vazir;
+    font-family: IRANSans;
 }
 
-
-.md-header--shadow{
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-}
-
-
-.md-content {
+.md-typeset{
     text-align: justify;
-  }
+}
 
-
-  .md-typeset .critic.block{
-    text-decoration: none;
-  }
-
-  .md-typeset ins.critic {
-    background-color: #d0fbff;
-    border-radius: 8px;
-    color: #629297;
-  }
-
-
-  .md-footer{
-    margin-top: 200px;
-  }
+.md-typeset img{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
