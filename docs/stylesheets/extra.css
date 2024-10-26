@@ -52,3 +52,15 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px;
 }
+
+.right-color-1{
+    border-right: 4px solid #4cae4f;
+    float: right;
+    padding: 10px;
+    background: #e5ffe6;
+    margin-bottom: 10px;
+}
+.right-color-1 strong{
+    width: 100%;
+    float: right;
+}
