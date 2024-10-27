@@ -1,0 +1,1 @@
+![](img/PostgreSQL/img/Poster.png)

@@ -33,9 +33,11 @@ nav:
 - آموزش گیت: 'page-git.md'
 - آموزش داکر: 'page-docker.md'
 - آموزش مین‌آی‌او: 'page-MinOI.md'
+- آموزش کوبرنتیز : 'page-kubernetes.md'
+- آموزش پستگرس کیو ال: 'page-PostgreSQL.md'
 - اجایل: 'page-agile.md'
 - دواپس: 'page-devops.md'
-- کوبرنتیز: 'page-kubernetes.md'
+
 #- بخش دو: 'sec2.md'
 
 markdown_extensions:
