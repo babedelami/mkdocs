@@ -68,7 +68,7 @@ Object Storageیا ذخیره‌سازی اشیا، یکی از روش‌های 
 
 ترمینال را باز کنید و دستور زیر را برای نصب آخرین نسخه MinIO در سیستم عامل **MacOS** وارد کنید:
 
-```css
+```sh
 brew install minio/stable/minio
 ```
 
@@ -76,7 +76,7 @@ brew install minio/stable/minio
 
 اگر قبلاً سرور MinIO را با استفاده از brew install minio نصب کرده‌اید، توصیه می‌کنیم به جای آن از minio/stable/minio دوباره نصب کنید.
 
-```plaintext
+```sh
 brew uninstall minio
 brew install minio/stable/minio
 ```
@@ -85,14 +85,14 @@ brew install minio/stable/minio
 
 دستورات زیر را وارد ترمینال و اجرا کنید:
 
-```plaintext
+```sh
 export MINIO_CONFIG_ENV_FILE=/etc/default/minio
 minio server --console-address :9001
 ```
 
 در صورت اجرای مین‌آی‌او نتیجه‌ی زیر قابل مشاهده خواهد بود: 
 
-```plaintext
+```console
 Status:         1 Online, 0 Offline.
 API: http://192.168.2.100:9000 http://127.0.0.1:9000
 RootUser: myminioadmin
@@ -117,14 +117,14 @@ https://127.0.0.1:9000
 
 نصب در پردازنده های amd64 (Intel or AMD 64-bit processors)
 
-```plaintext
+```sh
 wget https://dl.min.io/server/minio/release/linux-amd64/archive/minio-20241002175041.0.0-1.x86_64.rpm -O minio.rpm
 sudo dnf install minio.rpm
 ```
 
 نصب در پردازنده های arm64 (Apple M1/M2 or other ARM 64-bit processors)
 
-```plaintext
+```sh
 wget https://dl.min.io/server/minio/release/linux-arm64/archive/minio-20241002175041.0.0-1.aarch64.rpm -O minio.rpm
 sudo dnf install minio.rpm
 ```
@@ -133,14 +133,14 @@ sudo dnf install minio.rpm
 
 دستورات زیر را وارد ترمینال و اجرا کنید:
 
-```plaintext
+```sh
 mkdir ~/minio
 minio server ~/minio --console-address :9001
 ```
 
 در صورت اجرای مین‌آی‌او نتیجه‌ی زیر قابل مشاهده خواهد بود: 
 
-```plaintext
+```console
 API: http://192.0.2.10:9000  http://127.0.0.1:9000
 RootUser: minioadmin
 RootPass: minioadmin
@@ -186,13 +186,13 @@ WARNING: Detected default credentials 'minioadmin:minioadmin', we recommend that
 
 دستورات زیر را وارد ترمینال PowerShell کرده و اجرا کنید:
 
-```plaintext
+```sh
 \minio.exe server C:\minio --console-address :9001
 ```
 
 در صورت اجرای مین‌آی‌او نتیجه‌ی زیر قابل مشاهده خواهد بود: 
 
-```plaintext
+```console
 MinIO Object Storage Server
 Copyright: 2015-2024 MinIO, Inc.
 License: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html
@@ -305,7 +305,7 @@ https://127.0.0.1:9000
 
 ![](img/MinIO/img/12.PNG)
 
-### پروژه برنامه نویسی
+### **پروژه برنامه نویسی**
 
 پس از ایجاد کلید دسترسی می توان از طریق زبان های برنامه نویسی پشتیبان شده به مین‌آی‌او متصل گردید، در این مثال از زبان برنامه نویسی پایتون استفاده خواهد شد.
 

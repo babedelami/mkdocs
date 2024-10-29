@@ -64,3 +64,29 @@ body {
     width: 100%;
     float: right;
 }
+
+.md-annotation .md-annotation__index {
+    border-radius: 50rem;
+    height: 19px;
+    width: 20px;
+    po
+  }
+
+.md-annotation__index::before{
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(142, 0, 249, 0.4);
+      box-shadow: 0 0 0 0 rgba(142, 0, 249, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(142, 0, 249, 0);
+        box-shadow: 0 0 0 10px rgba(142, 0, 249, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(142, 0, 249, 0);
+    }
+  }
