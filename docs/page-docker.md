@@ -132,7 +132,7 @@ Container image  (کانتینر ایمیج)‌ در داکر به یک بست
 
 معمولا با یافتن نسخه نصب شده docker که روی آن کار می کنیم شروع می کنیم. 
 
-```plaintext
+```sh
 docker –version
 ```
 
@@ -140,7 +140,7 @@ docker –version
 
 ایمیج خاصی را از طریق داکر هاب جستجو می کند. این دستور اطلاعات خاصی از جمله نام image، توضیحات، خودکار، ستاره‌های رسمی و غیره را برمی‌گرداند. 
 
-```plaintext
+```sh
 docker search MySQL
 ```
 
@@ -150,7 +150,7 @@ docker search MySQL
 
 همانطور که از نام آن پیداست، این دستور یک image خاص را از داکر هاب می کشد. تنها کاری که باید انجام دهید این است که از دستور docker pull به همراه نام image استفاده کنید. در ادامه نمونه‌ای از pull یک ایمیج بدون استفاده از تگ آورده شده است:
 
-```plaintext
+```sh
 docker pull --platform Linux/x86_64 MySQL
 ```
 
@@ -162,7 +162,7 @@ docker pull --platform Linux/x86_64 MySQL
 
 این دستور برای ایجاد یک کانتینر از یک ایمیج استفاده می شود. 
 
-```plaintext
+```sh
 docker run --env MYSQL_ROOT_PASSWORD=my-secret-pw --detach mysql
 ```
 
@@ -172,7 +172,7 @@ docker run --env MYSQL_ROOT_PASSWORD=my-secret-pw --detach mysql
 
 شما باید کانتینر خود را شروع کنید تا بتوانید از آن در داکر استفاده کنید. دستور زیر به شما کمک می‌کند ظرف چند ثانیه کانتینر خود را شروع کنید.
 
-```plaintext
+```sh
 docker start CONTAINER_ID
 ```
 
@@ -180,7 +180,7 @@ docker start CONTAINER_ID
 
 یکی از مهمترین دلایل افزایش قابل توجه محبوبیت کانتینر، توانایی آن است که به شما کمک می‌کند تا هر کانتینر را بدون تأثیر بر سیستم میزبان حذف کنید. برای این کار می‌توانید از دستور زیر استفاده کنید.
 
-```plaintext
+```sh
 docker rm CONTAINER_ID
 ```
 
@@ -188,7 +188,7 @@ docker rm CONTAINER_ID
 
 این دستور برای لیست کردن تمام کانتینرهای در حال اجرا در پس زمینه استفاده می شود. در ادامه نحوه انجام آن آمده است:
 
-```plaintext
+```sh
 docker ps –all
 ```
 
@@ -196,13 +196,13 @@ docker ps –all
 
 همانطور که قبلا گفته شد، تصاویر Docker برای توسعه دهندگان بسیار ضروری است و همچنین عنصر سازنده هر کانتینر می‌باشد. فراموش نکنید که پایه همه کانتینرها با استفاده از ایمیج ها در داکر ایجاد شده است. به همین دلیل اغلب توسعه دهندگان چندین ایمیج از Docker را در سیستم‌های خود نگه می‌دارند. با دستور زیر می‌توانید در کمترین زمان تمام ایمیج های موجود در سیستم خود را بررسی کنید.
 
-```plaintext
+```sh
 docker images
 ```
 
 اجرای این دستور داکر به شما کمک می‌کند تا تمامی ایمیج های Docker را به همراه مخزن، تگ‌ها و اندازه آنها بررسی کنید. اگر می‌خواهید IMAGE\_ID را واکشی کنید، می‌توانید از پسوند q- استفاده کنید.
 
-```plaintext
+```sh
 docker images -q
 ```
 
@@ -210,7 +210,7 @@ docker images -q
 
 دستور docker stop یک کانتینر را با استفاده از نام کانتینر یا شناسه آن متوقف می کند.
 
-```plaintext
+```sh
 docker stop h7m52redeecc
 ```
 
@@ -218,7 +218,7 @@ docker stop h7m52redeecc
 
 این دستور برای راه اندازی مجدد کانتینر متوقف شده استفاده می شود. توصیه می شود پس از راه اندازی مجدد سیستم از این مورد استفاده کنید.
 
-```plaintext
+```sh
 docker restart h7m52redeecc
 ```
 
@@ -226,7 +226,7 @@ docker restart h7m52redeecc
 
 این دستور برای توقف فوری کانتینر با kill کردن اجرای آن استفاده می شود. در حالی که دستور docker stop به خاموش کردن کانتینر در زمان خود کمک می کند، دستور docker kill آن را بلافاصله متوقف می کند. 
 
-```plaintext
+```sh
 docker kill 09ca6feb6efc
 ```
 
@@ -234,7 +234,7 @@ docker kill 09ca6feb6efc
 
 این دستور برای دسترسی به کانتینری که در حال اجراست استفاده می شود. 
 
-```plaintext
+```sh
 docker exec -it test_db bash
 ```
 
@@ -244,7 +244,7 @@ docker exec -it test_db bash
 
 این دستور به شما کمک می کند تا به داکر هاب خود وارد شوید. همانطور که سعی می کنید وارد شوید، از شما خواسته می شود که اعتبار داکر هاب خود را بدهید.
 
-```plaintext
+```sh
 docker login
 ```
 
@@ -252,7 +252,7 @@ docker login
 
 این دستور برای ایجاد یا ذخیره ایمیجی از کانتینر ویرایش شده در سیستم لوکال استفاده می شود.
 
-```plaintext
+```sh
 docker commit 09ca6feb6efc parsdev/httpd_image
 ```
 
@@ -260,7 +260,7 @@ docker commit 09ca6feb6efc parsdev/httpd_image
 
 این دستور به فشار یا آپلود یک image داکر در مخزن یا داکر هاب کمک می کند. 
 
-```plaintext
+```sh
 docker push parsdev/httpd_image
 ```
 
@@ -268,7 +268,7 @@ docker push parsdev/httpd_image
 
 دستور docker networ برای دانستن جزئیات لیست شبکه ها در کلاستر استفاده می شود. 
 
-```plaintext
+```sh
 docker network ls
 ```
 
@@ -276,7 +276,7 @@ docker network ls
 
 این دستور برای بررسی تاریخچه یک image داکر استفاده می‌شود. هنگام استفاده از دستور باید نام ایمیج هم ذکر شود. 
 
-```plaintext
+```sh
 docker history httpd
 ```
 
@@ -284,7 +284,7 @@ docker history httpd
 
 این دستور برای آزاد کردن مقداری فضای دیسک استفاده می شود. هنگام استفاده از این دستور از شناسه image برای حذف آن استفاده می شود.
 
-```plaintext
+```sh
 docker rmi eb0e825dc3cf
 ```
 
@@ -292,7 +292,7 @@ docker rmi eb0e825dc3cf
 
 این دستور برای دانستن جزئیات همه کانتینرهای در حال اجرا، متوقف شده یا خارج شده استفاده می شود. 
 
-```plaintext
+```sh
 docker ps -a
 ```
 
@@ -300,7 +300,7 @@ docker ps -a
 
 این دستور یک فایل را از docker به سیستم لوکال کپی می کند.
 
-```plaintext
+```sh
 docker cp 09ca4feb7tfc:/usr/local/apache2/logs/httpd.pid /home/parsdev/
 ```
 
@@ -308,7 +308,7 @@ docker cp 09ca4feb7tfc:/usr/local/apache2/logs/httpd.pid /home/parsdev/
 
 این دستور برای بررسی گزارش‌های تمام کانتینرهای docker با شناسه ذکر شده در دستور استفاده می‌شود. 
 
-```plaintext
+```sh
 docker logs 09ca6feb6efc
 ```
 
@@ -316,7 +316,7 @@ docker logs 09ca6feb6efc
 
 این دستور یک حجم ایجاد می کند تا کانتینر docker بتواند از آن برای ذخیره داده ها استفاده کند. 
 
-```plaintext
+```sh
 docker volume create
 ```
 
@@ -324,6 +324,6 @@ docker volume create
 
 این دستور شما را از داکر هاب خارج می کند. 
 
-```plaintext
+```sh
 docker logout
 ```

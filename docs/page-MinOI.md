@@ -314,6 +314,14 @@ https://127.0.0.1:9000
 1.  ابتدا آخرین نسخه ی پایتون را در سیستم خود نصب کنید.
 2.  ایجاد فایل با نام دلخواه و پسوند py
 
+#### نصب پکیج پایتونی MinIO
+
+برای نصب پکیج مربوطه در ترمینال یا CMD دستور زیر را وارد کنید و منتظر نصب پکیج باشید.
+
+```sh
+pip install minio
+```
+
 ![](img/MinIO/img/13.PNG)
 
 فایل مربوطه را از طریق یکی از برنامه های IDE باز کنید، در این مثال از برنامه (Notepad++) استفاده شده است.
@@ -359,10 +367,10 @@ client.fput_object(
 
 
 
-منابع:
+**منابع:**
 
-hamravesh.com
+[https://hamravesh.com](https://hamravesh.com)
 
 [https://en.wikipedia.org/wiki/Amazon_S3](https://en.wikipedia.org/wiki/Amazon_S3)
 
-[https://aws.amazon.com/](https://aws.amazon.com/)
+[https://aws.amazon.com](https://aws.amazon.com)
