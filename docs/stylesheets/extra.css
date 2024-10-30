@@ -69,17 +69,25 @@ body {
     border-radius: 50rem;
     height: 19px;
     width: 20px;
-    po
+    animation: pulse 2s infinite;
   }
 
 .md-annotation__index::before{
     animation: pulse 2s infinite;
+
+    /* content: "\f055";
+    font-family: fontawesome;
+    background: none;
+    /* color: #fff; */
+    margin-right: -10px;
+    margin-top: -4px;
+    font-size: 22px; */
 }
 
 @keyframes pulse {
     0% {
-      -moz-box-shadow: 0 0 0 0 rgba(142, 0, 249, 0.4);
-      box-shadow: 0 0 0 0 rgba(142, 0, 249, 0.4);
+      -moz-box-shadow: 0 0 0 0 rgba(249, 129, 0, 0.746);
+      box-shadow: 0 0 0 0 rgba(249, 129, 0, 0.746);
     }
     70% {
         -moz-box-shadow: 0 0 0 10px rgba(142, 0, 249, 0);
@@ -90,3 +98,12 @@ body {
         box-shadow: 0 0 0 0 rgba(142, 0, 249, 0);
     }
   }
+
+  /* @media screen {
+
+  .md-annotation__index::after {
+    background-color: transparent !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  } 
+} */

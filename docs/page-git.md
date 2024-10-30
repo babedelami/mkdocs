@@ -59,7 +59,7 @@
 
 ![](img/git/1.PNG)
 
-پس از اتمام نصب، می‌توانید با استفاده از خط فرمان ویندوز (CMD) – (PowerShell) و Git Bash نصب شده و در سیستم عامل لینوکس از ترمینال اجرا و نصب گیت را بررسی کنید.
+پس از اتمام نصب، می‌توانید با استفاده از خط فرمان ویندوز (CMD) -- (PowerShell) و Git Bash نصب شده و در سیستم عامل لینوکس از ترمینال اجرا و نصب گیت را بررسی کنید.
 
 برای بررسی نصب شدن گیت کافیست وارد خط فرمان (CMD) و یا (PowerShell) و در لینوکس وارد ترمینال شده و دستور **git** را تایپ کنید و Enter را فشار دهید.
 
@@ -77,20 +77,20 @@
 تنظیم نام:
 
 ```bash
-git config –global user.name “Your name”
+git config --global user.name "Your name"
 ```
 
 تنظیم ایمیل:
 
-```plaintext
-git config –global user.email “Your email”
+```bash
+git config --global user.email "Your email"
 ```
 
 ### **git version**
 
 همانطور که از نامش مشخص است برای بررسی نسخه Git استفاده می شود. در نسخه های جدیدتر می توانید از git -v استفاده کنید.
 
-```plaintext
+```bash
 git version
 ```
 
@@ -98,13 +98,13 @@ git version
 
 احتمالاً اولین دستوری است که برای شروع یک پروژه جدید در Git استفاده می کنید. این دستور یک مخزن خالی جدید ایجاد می کند که در ادامه می توانید کد منبع خود را در داخل آن ذخیره کنید.
 
-```plaintext
+```bash
 git init
 ```
 
 همچنین می توانید نام مخزن را در دستور git init بیاورید.
 
-```plaintext
+```bash
 git init <your repository name>
 ```
 
@@ -112,17 +112,17 @@ git init <your repository name>
 
 از دستور **git clone** برای کپی یک مخزن موجود استفاده می شود. یک تفاوت اساسی بین git init و git clone وجود دارد.
 
-```plaintext
+```bash
 git clone <your project URL>
 ```
 
 ### **git status**
 
-از دستو **git  status** برای مشاهده وضعیت تغییرات انجام شده فایل ها استفاده می گردد، به وسیله ای این دستور می توانید فهرست فایل هایی که اضافه – حذف و یا دچار تغییر شده اند را مشاهده نمایید.
+از دستو **git  status** برای مشاهده وضعیت تغییرات انجام شده فایل ها استفاده می گردد، به وسیله ای این دستور می توانید فهرست فایل هایی که اضافه -- حذف و یا دچار تغییر شده اند را مشاهده نمایید.
 
 می توانید از آن در بین دستورات Git add و Git commits برای دیدن وضعیت استفاده کنید.
 
-```plaintext
+```bash
 git status
 ```
 
@@ -132,13 +132,13 @@ git status
 
 دستور زیر یک فایل خاص را به ناحیه stage اضافه می کند.
 
-```plaintext
+```bash
 git add your_file_name
 ```
 
 دستور زیر همه فایل های ویرایش شده و جدید را به ناحیه stage اضافه می کند.
 
-```plaintext
+```bash
 $ git add *
 ```
 
@@ -146,8 +146,8 @@ $ git add *
 
 این یک دستور ضروری در Git است. در واقع دستور **git commit** تغییرات را به مخزن محلی اضافه خواهد کرد.
 
-```plaintext
-git commit -m “your useful commit message”
+```bash
+git commit -m "your useful commit message"
 ```
 
 ### **git branch**
@@ -158,19 +158,19 @@ git commit -m “your useful commit message”
 
 لیست کردن همه شاخه ها
 
-```plaintext
+```bash
 git branch
 ```
 
 ساخت یک شاخه جدید
 
-```plaintext
+```bash
 git branch <branch_name>
 ```
 
 حذف یک شاخه
 
-```plaintext
+```bash
 git branch -d <branch_name>
 ```
 
@@ -180,13 +180,13 @@ git branch -d <branch_name>
 
 رفتن به شاخه دیگر:
 
-```plaintext
+```bash
 git checkout <branch_name>
 ```
 
 همچنین می توانید یک شاخه جدید بسازید و روی آن سوییچ کنید.
 
-```plaintext
+```bash
 git checkout -b <your_new_branch_name>
 ```
 
@@ -196,13 +196,13 @@ git checkout -b <your_new_branch_name>
 
 ### **git remote**
 
-```plaintext
+```bash
 git remote add <shortname> <url>
 ```
 
 **مثال**
 
-```plaintext
+```bash
 git remote add origin https://dev.azure.com/aCompiler/_git/DemoProject
 ```
 
@@ -210,26 +210,26 @@ git remote add origin https://dev.azure.com/aCompiler/_git/DemoProject
 
 پس از اتصال به مخزن از راه دور (**با کمک دستور git remote**) وقتشه که تغییرات را به مخزن بفرستید.
 
-```plaintext
+```bash
 git push -u <short_name> <your_branch_name>
 ```
 
 مثال
 
-```plaintext
+```bash
 git push -u origin feature_branch
 ```
 
 باید قبل از استفاده از دستور **git push** منبع و قسمت بالایی Git تنظیم شود.
 
-```plaintext
-git push –set-upstream <short_name> <branch_name>
+```bash
+git push --set-upstream <short_name> <branch_name>
 ```
 
 مثال
 
-```plaintext
-git push –set-upstream origin feature_branch
+```bash
+git push --set-upstream origin feature_branch
 ```
 
 ### **git fetch**
@@ -238,7 +238,7 @@ git push –set-upstream origin feature_branch
 
 این دستور همه اطلاعات مربوط به commitها، رفرنس ها و … را دانلود می کند بنابراین می توانید قبل از اعمال این تغییرات در مخزن محلی خود آنها را مرور کنید.
 
-```plaintext
+```bash
 git fetch
 ```
 
@@ -246,7 +246,7 @@ git fetch
 
 دستور **git pull** محتوا را دانلود کرده (نه متاداده ها) و بلافاصله مخزن محلی را با جدیدترین مطالب به روزرسانی می کند.
 
-```plaintext
+```bash
 git pull <remote_url>
 ```
 
@@ -256,19 +256,19 @@ git pull <remote_url>
 
 می توانید با دستور **git stash** به صورت زیر کار کنید.
 
-```plaintext
+```bash
 git stash
 ```
 
 دستور زیر همه stashهای را لیست می کند.
 
-```plaintext
+```bash
 git stash list
 ```
 
 به سادگی یک stash به شاخه اعمال می کند.
 
-```plaintext
+```bash
 git stash apply
 ```
 
@@ -276,14 +276,14 @@ git stash apply
 
 با کمک دستور **git log** می توانید همه کامیت های قبلی با شروع از آخرین کامیت را مشاهده کنید.
 
-```plaintext
+```bash
 git log
 ```
 
 به طور پیشفرض همه کامیت های شاخه فعلی را نشان می دهد اما می توانید از آن برای دیدن همه کامیت های کل شاخه ها با همه گزینه ها استفاده کنید.
 
-```plaintext
-git log –all
+```bash
+git log --all
 ```
 
 ### **git shortlog**
@@ -292,7 +292,7 @@ git log –all
 
 این دستور برای دیدن اینکه چه کسی روی چه چیزی کار کرده نیز کاربرد دارد.
 
-```plaintext
+```bash
 git shortlog
 ```
 
@@ -300,7 +300,7 @@ git shortlog
 
 در مقایسه با دستور **git log**، دستور **git show** جزئیات مربوط به یک کامیت خاص را نشان می دهد.
 
-```plaintext
+```bash
 git show <your_commit_hash>
 ```
 
@@ -310,7 +310,7 @@ git show <your_commit_hash>
 
 این دستور می تواند فایل های ردیابی شده را از ایندکس و دایرکتوری کار حذف کند.
 
-```plaintext
+```bash
 git rm <your_file_name>
 ```
 
@@ -318,7 +318,7 @@ git rm <your_file_name>
 
 دستور **git merge** کمک می کند تا تغییرات از دو شاخه را در یک شاخه واحد ادغام کنید.
 
-```plaintext
+```bash
 git merge <branch_name>
 ```
 
@@ -332,7 +332,7 @@ git rebase شبیه دستور git merge است. دو شاخه را با یک 
 
 اگر چند شاخه خصوصی دارید باید از دستور git rebase برای ادغام در یک شاخه استفاده کنید. این باعث می شود که یک تاریخچه کامیت خطی بسازید.
 
-```plaintext
+```bash
 git rebase <base>
 ```
 
@@ -342,19 +342,19 @@ git rebase <base>
 
  شروع git bisect :
 
-```plaintext
+```bash
 git bisect start
 ```
 
  به git bisect درباره یک کامیت خوب اطلاع دهید. :
 
-```plaintext
+```bash
 git bisect good a123
 ```
 
  به git bisect درباره یک کامیت بد اطلاع دهید. :
 
-```plaintext
+```bash
 git bisect bad z123
 ```
 
@@ -364,26 +364,26 @@ git bisect bad z123
 
 git cherry-pick یک دستور مفید و قوی است که امکان انتخاب هر کامیتی را از هر شاخه و اعمال آن به هر شاخه دیگری را فراهم می کند.
 
-```plaintext
+```bash
 git cherry-pick <commit-hash>
 ```
 
 ### **git archive**
 
-```plaintext
-git archive –format zip HEAD > archive-HEAD.zip
+```bash
+git archive --format zip HEAD > archive-HEAD.zip
 ```
 
 یک فایل zip از بازبینی فعلی ایجاد می کند.
 
-### **git pull –rebase**
+### **git pull --rebase**
 
 بیشتر مواقع هنگام استفاده از git pull باید rebase (نه ادغام یا merge) انجام دهید.
 
 در این صورت می توانید از گزینه زیر استفاده کنید.
 
-```plaintext
-git pull –rebase
+```bash
+git pull --rebase
 ```
 
 این کمک می کند تا تاریخچه را تمیز نگه دارید. همچنین از ادغام های متعدد جلوگیری می کند.
@@ -392,7 +392,7 @@ git pull –rebase
 
 برای بررسی سطر به سطر محتوای هر فایل از دستور git blame استفاده کنید. این دستور کمک می کند تا تشخیص دهید چه کسی تغییرات را در یک فایل ایجاد کرده است.
 
-```plaintext
+```bash
 git blame <your_file_name>
 ```
 
@@ -400,15 +400,15 @@ git blame <your_file_name>
 
 در Git تگ ها مفید هستند و می توانید از آنها برای مدیریت انتشار استفاده کنید. می توانید تگ را مانند یک شاخه بدون تغییر در نظر بگیرید. اهمیت آن هنگام انتشار عمومی خیلی بیشتری است. از دستور git tag برای ایجاد یک تگ جدید استفاده می شود.
 
-```plaintext
+```bash
 git tag -a v1.0.0
 ```
 
 ### **git verify-commit**
 
-دستور git verify-commit امضای gpg کامیت ها را بررسی می کند. GPG یا “GNU Privacy Guard” است.
+دستور git verify-commit امضای gpg کامیت ها را بررسی می کند. GPG یا "GNU Privacy Guard" است.
 
-```plaintext
+```bash
 git verify-commit <commit>
 ```
 
@@ -416,7 +416,7 @@ git verify-commit <commit>
 
 با این دستور می توانید تگ را تأیید کنید.
 
-```plaintext
+```bash
 git verify-tag <tag>
 ```
 
@@ -426,13 +426,13 @@ git verify-tag <tag>
 
  مقایسه دایرکتوری کاری با مخزن محلی :
 
-```plaintext
+```bash
 git diff HEAD <filename>
 ```
 
  مقایسه دو شاخه :
 
-```plaintext
+```bash
 git diff <source branch> <target branch>
 ```
 
@@ -440,7 +440,7 @@ git diff <source branch> <target branch>
 
 git citool یک جایگزین گرافیکی برای کامیت Git است.
 
-```plaintext
+```bash
 git citool
 ```
 
@@ -448,7 +448,7 @@ git citool
 
 دستور git mv برای تغییر نام فایل git استفاده می شود. دو آرگومان دارد؛ نام فایل منبع و مقصد.
 
-```plaintext
+```bash
 git mv <old-file-name> <new-file-name>
 ```
 
@@ -456,7 +456,7 @@ git mv <old-file-name> <new-file-name>
 
 با استفاده از دستور git clean می توانید با فایل های ردیابی نشده (untracked) کار کنید. با این دستور می توانید همه فایل های ردیابی نشده را از دایرکتوری کار حذف کنید. برای کار با فایل های ردیابی شده (tracked) باید از دستور git reset استفاده کنید.
 
-```plaintext
+```bash
 git clean
 ```
 
@@ -464,7 +464,7 @@ git clean
 
 دستورات زیادی در Git وجود دارد، برای به دست آوردن اطلاعات و راهنمایی بیشتر برای هر دستور می توانید از دستور git help در هر زمان از ترمینال استفاده کنید.
 
-```plaintext
+```bash
 git help <git_command>
 ```
 
@@ -472,7 +472,7 @@ git help <git_command>
 
 دستور git whatchanged همان کار git log را انجام می دهد اما در قالب خام.
 
-```plaintext
+```bash
 git whatchanged
 ```
 
@@ -545,7 +545,7 @@ git whatchanged
 
 در مرحله ی بعد دستور + را وارد کنید تا اطلاعات و کانفیگ پایه گیت ایجاد گردد :
 
-```plaintext
+```bash
 git init
 ```
 
@@ -578,7 +578,7 @@ git init
 
 دستور : 
 
-```plaintext
+```bash
 git add *
 ```
 
@@ -586,7 +586,7 @@ git add *
 
 دستور : 
 
-```plaintext
+```bash
 git status
 ```
 
@@ -601,8 +601,8 @@ git status
 
 دستور کامل : 
 
-```plaintext
-git commit -m “Matne Nemone”
+```bash
+git commit -m "Matne Nemone"
 ```
 
 نتیجه:
@@ -614,7 +614,7 @@ git commit -m “Matne Nemone”
 
 **دستور کامل:** 
 
-```plaintext
+```bash
 git branch -M main
 ```
 
@@ -627,13 +627,13 @@ git branch -M main
 
 دستور نمونه: 
 
-```plaintext
-git remote add origin “Your Repository Address” 
+```bash
+git remote add origin "Your Repository Address" 
 ```
 
 دستور کامل و مثال: 
 
-```plaintext
+```bash
 git remote add origin http://git.ft/myname/firstproject.git
 ```
 
@@ -643,13 +643,13 @@ git remote add origin http://git.ft/myname/firstproject.git
 
 دستور کوتاه و ارسال به برنچ پیش فرض : 
 
-```plaintext
+```bash
 git push
 ```
 
 دستور کامل و ارسال به برنچ main : 
 
-```plaintext
+```bash
 git push -uf origin main
 ```
 
